@@ -66,12 +66,12 @@ HTTP (endpoint) disponible
 
 Al arrancar la aplicación también se expone un endpoint HTTP usando Undertow:
 
-- GET http://0.0.0.0:8080/rpc/ultimo/{id}
+- GET http://0.0.0.0:8000/rpc/ultimo/{id}
 
 Ejemplo (PowerShell):
 
 ```powershell
-Invoke-WebRequest -Uri http://localhost:8080/rpc/ultimo/S001 -UseBasicParsing
+Invoke-WebRequest -Uri http://localhost:8000/rpc/ultimo/S001 -UseBasicParsing
 ```
 
 El endpoint invoca internamente la ruta `direct:solicitarLectura` y devuelve el JSON del último valor.
